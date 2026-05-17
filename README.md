@@ -1,1 +1,5 @@
-# fastapi
+# FastApi proyecto
+Primero se crea el entorno virtual de python con el comando python -m venv venv. Luego se activa con el comando .\myvenv\Scripts\Activate.ps1. Despues se crea el archivo de texto llamado requirements.txt donde se guardan todos los paquetes que seran instalados en el python que se instalo en el entorno virtual. Tras lo anterior ahora instalamos las dependencias que fueron especificadas en el archivo requirement.txt con el comando pip install -r requirement.txt. Y para poder ejecutar el api tenemos que escribir el comando uvicorn main:app --reload. El reload sirve para que cuando se realizen cambios en main no vuelva cargar el api en vez de interrumpirse. Con http://127.0.0.1:8000/docs se puede acceder a la lista de todos los endpoints. Para este endpoint: @app.get("/greet/{name}")
+def great_name(name: str, age: int):
+    return {"Messeage": f"Hello {name} and you are {age} years old"}
+Lo que se tiene que poner en el navegador para que se pueda ejecutar es lo siguiente: http://127.0.0.1:8000/greet/martin?age=23
