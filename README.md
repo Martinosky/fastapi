@@ -3,3 +3,9 @@ Primero se crea el entorno virtual de python con el comando python -m venv venv.
 def great_name(name: str, age: int):
     return {"Messeage": f"Hello {name} and you are {age} years old"}
 Lo que se tiene que poner en el navegador para que se pueda ejecutar es lo siguiente: http://127.0.0.1:8000/greet/martin?age=23
+
+uvicorn crud:app --reload 
+
+C:\Program Files\MySQL\MySQL Server 9.7\bin>mysql -u root -p
+
+python create_table.py
