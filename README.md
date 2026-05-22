@@ -9,3 +9,7 @@ uvicorn crud:app --reload
 C:\Program Files\MySQL\MySQL Server 9.7\bin>mysql -u root -p
 
 python create_table.py
+
+passlib[argon2]: para cifrar la contraseña
+python-josh[cryptography]: se usa para crear el token json
+python-multipart: Nos ayuda a nalizar los datos entregados en el formulario
